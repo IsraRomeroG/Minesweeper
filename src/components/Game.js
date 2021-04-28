@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Board from './Board';
 
 export default class Game extends Component{
 
@@ -26,7 +27,11 @@ export default class Game extends Component{
         return(
             <>
             <h2>Soy Game</h2>
-            
+            <Board width={this.state.board.width}
+                height={this.state.board.height}
+                mines={this.state.board.mines}
+                openCells={this.state.board.openCells}
+                cells={this.state.board.cells} />
             </>
         )
     };
