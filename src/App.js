@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Game from './components/Game';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           Learn React
         </a>
       </header>
+      <Game width={5} height={4} mines={3} />
     </div>
   );
 }
