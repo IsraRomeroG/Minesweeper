@@ -47,7 +47,7 @@ export default class Board extends Component{
                 this.props.cells !== undefined ?
                 this.props.cells.map((el, index) => 
                     <div key={index}>
-                        {el.map((c) => <Cell accion={this.props.handleClick} hidden={c.hidden} value={c.value} icon="&nbsp;&nbsp;" key={c.id} id={c.id} />)}
+                        {el.map((c) => <Cell accion={this.props.handleClick} hidden={c.hidden} value={c.value} icon="1" key={c.id} id={c.id} />)}
                     </div>
                 )
                 : <p key="loading">Loading Board...</p>

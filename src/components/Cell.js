@@ -10,19 +10,20 @@ export default class Cell extends Component{
 
     auxClic = e => {
         console.log("Aux Clic");
-        if(this.state.icon === "&nbsp;&nbsp;"){
+        console.log("["+this.state.icon+"]")
+        if(this.state.icon === "1"){
             this.setState({
-                icon: "M",
+                icon: "X",
             });
         }
-        if(this.state.icon === "M"){
+        if(this.state.icon === "X"){
             this.setState({
                 icon: "?",
             });
         }
         if(this.state.icon === "?"){
             this.setState({
-                icon: "-",
+                icon: "1",
             });
         }
     };
@@ -33,10 +34,10 @@ export default class Cell extends Component{
         
         return(
             this.props.hidden === true
-                ? <button onAuxClick={this.auxClic} id={this.props.id} onClick={this.props.accion}>
-                    {this.state.icon}
+                ? <button onAuxClick={this.auxClic} id={this.props.id} onClick={this.props.accion} className="blue">
+                    {this.state.icon === "1" ? <>&nbsp;&nbsp;</> : this.state.icon }
                   </button>
-                : <button id={this.props.id}>{this.props.value}</button>
+                : <button id={this.props.id}  className="gray">{this.props.value === -1 ? <>💣</> : (this.props.value === 0 ? <>&nbsp;&nbsp;</> : this.props.value )}</button>
         )
     };
 }
