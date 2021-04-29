@@ -19,7 +19,7 @@ function App() {
           Learn React
         </a>
       </header>
-      <Game key="game" width={10} height={5} mines={5} />
+      <Game key="game" width={5} height={5} mines={3} />
     </div>
   );
 }

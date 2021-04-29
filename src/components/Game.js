@@ -24,6 +24,20 @@ export default class Game extends Component{
             })
     }
 
+    handleClick = (e) => {
+        console.log("Click en: "+e.target.id);
+        const id = e.target.id;
+        let url = "http://localhost:8080/minesweeper/v1/"+this.state.id+"/"+id;
+
+        fetch(url, {method: 'GET'})
+            .then(res => res.json())
+           .then(json => {
+                this.setState({board: json});
+                console.log(json)
+            })
+    }
+
+
     render(){
         return(
             <>
@@ -31,8 +45,9 @@ export default class Game extends Component{
                 width={this.state.board.width}
                 height={this.state.board.height}
                 mines={this.state.board.mines}
-                openCells={this.state.board.openCells}
-                cells={this.state.board.cells} />
+                status={this.state.board.status}
+                cells={this.state.board.cells}
+                handleClick={this.handleClick} />
                 {
                     //console.log(this.state.board.cells)
                 }
