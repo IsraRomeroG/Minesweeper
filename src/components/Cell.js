@@ -37,7 +37,14 @@ export default class Cell extends Component{
                 ? <button onAuxClick={this.auxClic} id={this.props.id} onClick={this.props.accion} className="blue">
                     {this.state.icon === "1" ? <>&nbsp;&nbsp;</> : this.state.icon }
                   </button>
-                : <button id={this.props.id}  className="gray">{this.props.value === -1 ? <>💣</> : (this.props.value === 0 ? <>&nbsp;&nbsp;</> : this.props.value )}</button>
+                : <>
+                    {this.props.value === -1
+                      ? <button id={this.props.id}  className="bomb">💣</button>
+                      : <button id={this.props.id}  className="gray">
+                          {(this.props.value === 0 ? <>&nbsp;&nbsp;</> : this.props.value )}
+                        </button>
+                    }
+                  </>
         )
     };
 }

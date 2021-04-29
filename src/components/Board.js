@@ -38,10 +38,13 @@ export default class Board extends Component{
             <>
             <h3>Soy Board</h3>
             <p>
-                Width: {this.props.width} ...
-                Height: {this.props.height} ...
-                Mines: {this.props.mines} ...
-                Status: {this.props.status}
+                {this.props.status === 0
+                  ? <>Let's Play 🚀</>
+                  : <>{this.props.status === 1
+                    ? <>You Win 😎</>
+                    : <>You Loose 💩</>
+                  }</>
+                }
             </p>
                 {
                 this.props.cells !== undefined ?

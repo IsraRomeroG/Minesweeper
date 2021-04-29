@@ -6,17 +6,18 @@ li{display:inline-block;}
 ul{list-style-type:none;margin:0;padding:0;}
 
 button{
-  /*text-decoration: none;
-  /*padding: 10px;
-  7*font-weight: 600;
-  /*font-size: 20px;
-  /*color: #ffffff;
-  /*background-color: #1883ba;
+  /*
+  padding: 10px;
+  font-size: 20px;
+  */
+  font-weight: 600;
+  
+  color: #146880;
   /*border-radius: 6px;
   /*border: 2px solid #0016b0;*/
 }
 button:hover{
-  background-color: #bbb;
+  background-color: #888;
 }
 
 .blue{
@@ -25,8 +26,10 @@ button:hover{
 .gray{
   background-color: #bbb;
 }
-.red{
-  background-color: #cf0000d7;
+.bomb{
+  padding-left: 2px;
+  padding-right: 2px;
+  background-color: #f7e11cd7;
 }
 
 
