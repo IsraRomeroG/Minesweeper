@@ -36,16 +36,19 @@ export default class Board extends Component{
 
         return(
             <>
-            <h3>Soy Board</h3>
             <p>
                 {this.props.status === 0
                   ? <>Let's Play 🚀</>
                   : <>{this.props.status === 1
                     ? <>You Win 😎</>
-                    : <>You Loose 💩</>
+                    : <>{this.props.status === -1
+                        ? <>You Loose 💩</>
+                        : <>Loading ...</>
+                    }</>
                   }</>
                 }
             </p>
+            <span>{this.props.time}</span>
                 {
                 this.props.cells !== undefined ?
                 this.props.cells.map((el, index) => 

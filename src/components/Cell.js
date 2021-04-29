@@ -13,10 +13,10 @@ export default class Cell extends Component{
         console.log("["+this.state.icon+"]")
         if(this.state.icon === "1"){
             this.setState({
-                icon: "X",
+                icon: "x",
             });
         }
-        if(this.state.icon === "X"){
+        if(this.state.icon === "x"){
             this.setState({
                 icon: "?",
             });
@@ -29,8 +29,6 @@ export default class Cell extends Component{
     };
 
     render(){
-        //const{ handleClick } = this.props
-
         
         return(
             this.props.hidden === true

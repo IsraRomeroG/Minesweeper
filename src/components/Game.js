@@ -7,6 +7,7 @@ export default class Game extends Component{
         this.state = {
             id: "",
             board:[],
+            counter: 0
         }
     }
 
@@ -22,6 +23,20 @@ export default class Game extends Component{
                 this.setState({id: json.id});
                 this.setState({board: json.board});
             })
+
+        this.timer = setInterval(
+            () => this.tick(),
+            1000
+        );
+    }
+
+    tick() {
+        this.setState({
+            counter: this.state.counter + 1,
+        });
+    }
+    stopTick(){
+        this.state.board.status !== 0 ? clearInterval(this.timer) : console.log("Continue ...");
     }
 
     handleClick = (e) => {
@@ -31,12 +46,14 @@ export default class Game extends Component{
 
         fetch(url, {method: 'GET'})
             .then(res => res.json())
-           .then(json => {
+            .then(json => {
                 this.setState({board: json});
-                console.log(json)
-            })
+            }).catch().finally(
+                ()=>{this.stopTick()}
+            )
     }
 
+    //val(){this.state.counter !== 0 ? this.stopTick() : console.log("NA")}
 
     render(){
         return(
@@ -47,7 +64,8 @@ export default class Game extends Component{
                 mines={this.state.board.mines}
                 status={this.state.board.status}
                 cells={this.state.board.cells}
-                handleClick={this.handleClick} />
+                handleClick={this.handleClick}
+                time={this.state.counter} />
                 {
                     //console.log(this.state.board.cells)
                 }
