@@ -50,7 +50,7 @@ function App() {
 
   const loadUser = e => {
     const u= user
-    let url = "http://ec2-3-131-109-163.us-east-2.compute.amazonaws.com:8080/minesweeper/v1/users/"+u;
+    let url = "https://ec2-3-131-109-163.us-east-2.compute.amazonaws.com:8443/minesweeper/v1/users/"+u;
 
     fetch(url, {method: 'GET'})
         .then(res => res.json())
@@ -65,7 +65,7 @@ function App() {
   const loadGame = e => {
     console.log(e.target.id)
     setId(e.target.id);
-    let url = "http://ec2-3-131-109-163.us-east-2.compute.amazonaws.com:8080/minesweeper/v1/"+e.target.id;
+    let url = "https://ec2-3-131-109-163.us-east-2.compute.amazonaws.com:8443/minesweeper/v1/"+e.target.id;
 
     fetch(url)
         .then(res => res.json())

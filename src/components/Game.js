@@ -17,7 +17,7 @@ export default class Game extends Component{
             let w = this.props.width;
             let h = this.props.height;
             let m = this.props.mines;
-            let url = "http://ec2-3-131-109-163.us-east-2.compute.amazonaws.com:8080/minesweeper/v1/"+w+"/"+h+"/"+m;
+            let url = "https://ec2-3-131-109-163.us-east-2.compute.amazonaws.com:8443/minesweeper/v1/"+w+"/"+h+"/"+m;
             fetch(url)
             .then(res => res.json())
             .then(json => {
@@ -49,7 +49,7 @@ export default class Game extends Component{
     handleClick = (e) => {
         console.log("Click en: "+e.target.id);
         const id = e.target.id;
-        let url = "http://ec2-3-131-109-163.us-east-2.compute.amazonaws.com:8080/minesweeper/v1/"+this.state.id+"/"+id;
+        let url = "https://ec2-3-131-109-163.us-east-2.compute.amazonaws.com:8443/minesweeper/v1/"+this.state.id+"/"+id;
 
         fetch(url, {method: 'GET'})
             .then(res => res.json())
@@ -61,7 +61,7 @@ export default class Game extends Component{
     }
 
     saveGame = e => {
-        let url = "http://ec2-3-131-109-163.us-east-2.compute.amazonaws.com:8080/minesweeper/v1/"+this.state.id+"/"+this.props.session.name;
+        let url = "https://ec2-3-131-109-163.us-east-2.compute.amazonaws.com:8443/minesweeper/v1/"+this.state.id+"/"+this.props.session.name;
 
         fetch(url, {method: 'POST'})
             .then(alert("Game Saved"))
