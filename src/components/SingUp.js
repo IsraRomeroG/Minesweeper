@@ -14,7 +14,7 @@ export default class SingUp extends Component{
 
     saveUser = e => {
         const u= this.state.user
-        let url = "http://192.168.0.14:8080/minesweeper/v1/users/"+u;
+        let url = "http://ec2-3-131-109-163.us-east-2.compute.amazonaws.com:8080/minesweeper/v1/users/"+u;
 
         fetch(url, {method: 'POST', body: JSON.stringify(u),})
             .then(res => res.json())
