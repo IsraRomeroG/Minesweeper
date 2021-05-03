@@ -28,7 +28,7 @@ export default class SingUp extends Component{
     render(){
         return(
             <>
-                <h3>Sing up</h3>
+                <h3>Sign up</h3>
                 <label>User Name: </label>
                 <input onChange={this.handleChange} name="user" type="text" min="1" max="20" value={this.state.user}/>
                 <br/><br/>

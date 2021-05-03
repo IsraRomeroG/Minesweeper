@@ -92,8 +92,8 @@ function App() {
       </header>
       <button onClick={() => setAccion(1)}>New Game</button>
       {(login.name === null)
-        ? <><button onClick={() => setAccion(2)}>Sing in</button>
-          <button onClick={() => setAccion(3)}>Sing up</button></>
+        ? <><button onClick={() => setAccion(2)}>Sign in</button>
+          <button onClick={() => setAccion(3)}>Sign up</button></>
         : <><button onClick={() => {setAccion(4); }}>Load Game</button></>
       }
       

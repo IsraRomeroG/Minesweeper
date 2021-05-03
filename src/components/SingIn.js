@@ -13,7 +13,7 @@ export default class SingIn extends Component{
     render(){
         return(
             <>
-                <h3>Sing in</h3>
+                <h3>Sign in</h3>
                 <label>User Name: </label>
                 <input onChange={this.props.change} name="user" type="text" min="1" max="20" value={this.state.user}/>
                 <br/><br/>
