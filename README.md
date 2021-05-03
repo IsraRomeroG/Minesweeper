@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+## React Minesweeper
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The app is running in the following link: https://israromero.com/
 
-## Available Scripts
+Opening the game you will find 3 options:
+![](https://i.ibb.co/XJfn5QB/opciones1.png)
 
-In the project directory, you can run:
 
-### `npm start`
+You can play a New Game without Sign In, once you click on New Game you'll be asked about the Boad's size:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![](https://i.ibb.co/M8Zr5Ds/newgame.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
+Clicked on Let's Play Button the game will start:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![](https://i.ibb.co/yn4VNpL/play.png)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Use left click to open a cell and scroll click to mark a cell:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![](https://i.ibb.co/58wRhS5/clicks.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+If you loose a poop will be displayed:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![](https://i.ibb.co/SQGHMQt/loose.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you win you will see this:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![](https://i.ibb.co/Cmdpthd/win.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+------------
 
-## Learn More
+If you want to save your games you have to Sign Up, this is a very simple Sign Up whitout any security.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You only have to enter your username, and it will be saved:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![](https://i.ibb.co/3s200cS/singup.png)
 
-### Code Splitting
+Then you can Sign In simply with you username:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![](https://i.ibb.co/R6yfPdh/singin.png)
 
-### Analyzing the Bundle Size
+Once you Sign In you will see a diferent menú:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![](https://i.ibb.co/FHP7xkv/singinok.png)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+If you click on Load Game you will see your previous saved games:
 
-### Advanced Configuration
+![](https://i.ibb.co/0Ypd7Bd/loadgame.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+If you want to save a game you will see a new button under the board:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![](https://i.ibb.co/wdDm3s8/saveagame.png)
