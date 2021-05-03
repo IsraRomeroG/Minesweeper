@@ -6,7 +6,7 @@ Opening the game you will find 3 options:
 ![](https://i.ibb.co/XJfn5QB/opciones1.png)
 
 
-You can play a New Game without Sing In, once you click on New Game you'll be asked about the Boad's size:
+You can play a New Game without Sign In, once you click on New Game you'll be asked about the Boad's size:
 
 ![](https://i.ibb.co/M8Zr5Ds/newgame.png)
 
@@ -31,17 +31,17 @@ If you win you will see this:
 
 ------------
 
-If you want to save your games you have to Sing Up, this is a very simple Sing Up whitout any security.
+If you want to save your games you have to Sign Up, this is a very simple Sign Up whitout any security.
 
 You only have to enter your username, and it will be saved:
 
 ![](https://i.ibb.co/3s200cS/singup.png)
 
-Then you can Sing In simply with you username:
+Then you can Sign In simply with you username:
 
 ![](https://i.ibb.co/R6yfPdh/singin.png)
 
-Once you Sing In you will see a diferent menú:
+Once you Sign In you will see a diferent menú:
 
 ![](https://i.ibb.co/FHP7xkv/singinok.png)
 
